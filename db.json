@@ -1,0 +1,24 @@
+{
+  "expand" : "attributes",
+  "link" : {
+    "rel" : "self",
+    "href" : "http://localhost:8095/crowd/rest/usermanagement/1/user?username=my_username"
+  },
+  "name" : "my_username",
+  "first-name" : "My",
+  "last-name" : "Username",
+  "display-name" : "My Username",
+  "email" : "user@example.test",
+  "password" : {
+    "link" : {
+      "rel" : "edit"
+    }
+  },
+  "active" : true,
+  "attributes" : {
+    "link" : {
+      "rel" : "self"
+    },
+    "attributes" : []
+  }
+}

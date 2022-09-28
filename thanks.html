@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#overlay{
+  /*display: none;*/
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-title {
+    color: #40640d;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.modal{
+    margin-top: 400px;
+    margin-left: 730px;
+	background-color: #FFF;
+	padding: 1rem 1.5rem;
+	width: 400px;
+	height: 150px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+
+/*BUTTON STYLES*/
+.btn{
+	border: 2px solid #fff;
+	border-radius: .3rem;
+	background-color: #FEC46C;
+	color:  #313F4B;;
+	padding: .5rem 1.5rem;
+	margin-top: .5rem;
+}
+
+.btn:hover{
+	cursor: pointer;
+}
+
+.btn-modal-open{
+	margin-top: 1em;
+}
+.btn-modal-close{
+	border: 2px solid #5F889A;
+}
+
+
+    </style>
+<body>
+    <div id="overlay">
+        <div class="modal">
+            <div class="modal-card">
+                <h1 class="modal-title">
+                    Raxmat Xabaringiz qabul qilinadi
+                </h1>
+                <a href="index.html"><button class="btn btn-close">Click Me!</button></a>
+        </div>
+    </div>
+    </div>
+<script>
+
+const btnCloseEl = document.querySelector(".btn-modal-close");
+
+const modal = document.getElementById("overlay");
+
+                                 
+btnCloseEl.addEventListener("click", closeModal)
+
+
+function closeModal(){
+	modal.style.display = "none";
+}
+</script>
+</body>
+</html>
